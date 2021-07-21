@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void main() {
+    int a[5][5]={0},b[10][5]={0}, c[5][5]={0},i,j,n;
+    printf("Enter array size: ");
+    scanf("%d", &n);
+    printf("Enter A array values:\n");
+    for(i=0; i<n; i++)
+    for(j=0; j<n; j++){
+        printf("Array Values %d %d:", i,j);
+        scanf("%d", &a[i][j]);
+    }
+    printf("Enter B array values:\n");
+    for(i=0; i<n; i++)
+    for(j=0; j<n; j++){
+        printf("Array Values %d %d: ", i,j);
+        scanf("%d", &b[i][j]);
+        c[i][j] = a[i][j] + b[i][j];
+    }
+    printf("Sum of arrays are: \n")
+    for(i=0; i<n; i++){
+    for(j=0; j<n; j++)
+    printf("%d\t", c[i][j]);
+    printf("\n");
+    }
+}
