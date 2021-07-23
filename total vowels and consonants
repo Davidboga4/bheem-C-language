@@ -1,0 +1,17 @@
+#include<stdio.h>
+void main(){
+    char str[20];
+   int c=0,i, l,t=0,b;
+    printf("enter name: ");
+    gets(str);
+    for(l=0; str[l]!=0; l++);
+    for(i=0;i<l;i++)
+    {
+        if('a'==str[i] || 'e'==str[i] || 'i'==str[i] || 'o'==str[i] || 'u'==str[i])
+        c += 1; 
+        t = t+1;
+    }
+        printf("total vowels in a string: %d\n",c);
+        b=t-c;
+      printf("Total consonants in a string: %d",b);
+}
