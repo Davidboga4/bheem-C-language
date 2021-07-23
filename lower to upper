@@ -1,0 +1,15 @@
+#include<ctype.h> 
+#include<stdio.h>
+void main(){
+    char str[25];
+    char ch;
+   int i=0;
+   printf("Enter the string: ");
+   gets(str);
+   while(str[i]){
+       ch = str[i];
+   putchar(toupper(ch));
+   i++;
+   }
+   return 0;
+}
