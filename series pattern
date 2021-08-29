@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    int n, c=2;
+    printf("Enter n terms: ");
+    scanf("%d", &n);
+    printf("1 2 5");
+    for(int i=2; i<n-1; i++)
+        i%2==0 ?
+        printf(" %.0f", pow(2, i)) :
+        printf(" %.0f", pow(5, c++));
+}
