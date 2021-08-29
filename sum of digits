@@ -1,0 +1,21 @@
+#include<stdio.h>
+int sum(int a);
+void main()
+{
+    int n, c;
+    printf("Enter number: ");
+    scanf("%d", &n);
+    c = sum(n);
+    while(c > 9)
+    c  = sum(c);
+    printf("%d", c);
+}
+
+int sum(int a){
+    int c=0;
+    while(a !=0){
+        c += a%10;
+        a /= 10;
+    }
+    return c;
+}
