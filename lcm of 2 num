@@ -1,0 +1,21 @@
+#include<stdio.h>
+int lcm(int a, int b);
+void main()
+{
+    int n, m;
+    printf("Enter two values: ");
+    scanf("%d %d", &n, &m);
+    n>m ? lcm(n, m) : lcm(m, n);
+}
+
+int lcm(int a, int b){
+    int c=1;
+    while(1)
+    {
+       if((a*c)%b == 0){
+        printf("%d", a*c);
+        break;
+       }
+       c++;
+    }
+}
